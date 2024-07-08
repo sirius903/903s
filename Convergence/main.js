@@ -5,7 +5,7 @@ ctx.strokeStyle = 'white';
 ctx.fillStyle = 'white';
 ctx.lineWidth = 2;
 
-let r = 200;
+let r = 240;
 let theta = Math.PI / 2;
 
 let dx = canvas.width / 2;
@@ -18,7 +18,6 @@ let phase = 1;
 
 function animation(e){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
     let ex = e.offsetX - dx;
     let ey = e.offsetY - dy;
     theta = ((ex != 0 ? -Math.atan(ey / ex) : Math.PI / 2) + (ex > 0 ? 0 : -Math.PI)) / 5 * 2 + Math.PI * 3 / 5;

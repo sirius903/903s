@@ -6,10 +6,21 @@
     <title>Convergence</title>
 </head>
 <body>
-    <h1>Convergence</h1>
-    <canvas id="canvas" width="700" height="500"></canvas>
+    <h1 id="title">Convergence</h1>
+    <canvas id="canvas" width="900" height="600"></canvas>
     <script src="main.js"></script>
     <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #title {
+            position: fixed;
+            color: #fff;
+            padding: 0.2em 0.5em 0.1em;
+        }
+
         #canvas {
             background-color: #000;
         }
